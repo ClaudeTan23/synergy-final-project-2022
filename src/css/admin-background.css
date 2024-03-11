@@ -1,0 +1,188 @@
+@media (min-width: 0px) and (max-width: 900px) {
+    .main-index-container {
+
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+* {
+    margin: 0 0;
+}
+
+body {
+    background-color: #E2E8FB;
+}
+
+.main-index-background-admin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    background-image: url("../img/adminbg.png");
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    width: 100vw;
+    height: 10%;
+    justify-content: right;
+    align-items: center;
+}
+
+.header-block {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #141E3E;
+    /* animation: HeaderAnimation infinite 5s; */
+}
+
+.header-one {
+    padding: 0 3px;
+    color: #DCE3FA;
+    animation: headerOne infinite 5s;
+}
+
+.header-two {
+    padding: 0 3px;
+    animation: headerTwo infinite 8s;
+    color: #DCE3FA;
+}
+
+@keyframes headerOne {
+    0% {
+        margin-top: 0;
+    }
+
+    93% {
+        margin-top: 0;
+    }
+
+    94% {
+        margin-top: -15px;
+    }
+
+    95% {
+        margin-top: 0;
+    }
+
+    96% {
+        margin-top: -15px;
+    }
+
+    97% {
+        margin-top: 0;
+    }
+
+    98% {
+        margin-top: -15px;
+    }
+
+    99% {
+        margin-top: 0px;
+    }
+
+    99.5% {
+        margin-top: -5px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes headerTwo {
+    0% {
+        margin-top: 0;
+        transform: rotate(0deg);
+    }
+
+    85% {
+        margin-top: 0;
+        transform: rotate(0deg);
+    }
+
+    88% {
+        margin-top: -10px;
+        transform: rotate(15deg);
+    }
+
+    92% {
+        margin-top: -10px;
+        transform: rotate(10deg);
+    }
+
+    96% {
+        margin-top: -10px;
+        transform: rotate(15deg);
+    }
+
+    97% {
+        margin-top: -10px;
+        transform: rotate(10deg);
+    }
+
+    98% {
+        margin-top: -10px;
+        transform: rotate(15deg);
+    }
+
+    100% {
+        margin-top: 0;
+        transform: rotate(0deg);
+    }
+}
+
+.main-index-container {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.background-animation-container {
+    background-color: #E2E8FB;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.animation-wave-block {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.wave {
+    transform: rotate(0deg);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.path {
+    transform: translate(0, 0px);
+    opacity: 1;
+}

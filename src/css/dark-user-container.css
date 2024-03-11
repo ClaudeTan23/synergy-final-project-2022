@@ -1,0 +1,45 @@
+.dark .hover-user-container {
+    display: none;
+}
+
+.dark .hover-header-block {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.dark .hover-user-icon-block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .hover-content-block {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.dark .hover-content-block div:nth-child(1) {
+    width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .hover-content-block div:nth-child(2) {
+    width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+
+} 
+

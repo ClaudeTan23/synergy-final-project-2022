@@ -1,0 +1,45 @@
+.main-index-container-transition {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    position: relative;
+}
+
+.transition-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    /* background-color: bisque; */
+    /* position: fixed; */
+    height: 90%;
+    width: 100% ;
+}
+
+.item-exit {
+    opacity: 1;
+    /* background-color: blue; */
+}
+
+.item-exit-active {
+    /* opacity: 0; */
+    transition: opacity 500ms ease-in;
+    position: absolute;
+    height: auto;
+    height: 90%;
+    width: 100% ;
+}
+
+/* .item-enter-active .testing {
+    background-color: blueviolet;
+}
+
+.item-exit-active .testing {
+    background-color: darkblue;
+}
+ */

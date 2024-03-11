@@ -1,0 +1,573 @@
+.dark .friend-main-container {
+    display: flex;
+    flex: auto;
+    height: auto;
+    background-color: #3A393C;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dark .friend-container {
+    display: flex;
+    width: 920px;
+    height: auto;
+    flex-direction: column;
+}
+
+.dark .friend-control-bar-container {
+    flex: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #3A393C;
+    position: sticky;
+    top: 60px;
+    z-index: 2;
+}
+
+.dark .friend-icon-title {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .friend-icon-title > div {
+    padding: 10px;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.dark .friend-icon-title > div:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark .friend-icon-title > div > span {
+    font-weight: 600;
+    color: #E1E4EC;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .border-active-contaniner.friends {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    margin-left: -600px;
+}
+
+.dark .border-active-contaniner.request {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    margin-left: -200px;
+}
+
+.dark .border-active-contaniner.find {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    margin-left: 200px;
+}
+
+.dark .border-active-contaniner.blocked {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    margin-left: 600px ;
+}
+
+.dark .friends-container {
+    background-color: #2D2D2F;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 6px;
+    height: auto;
+    z-index: 0;
+}
+
+.dark .friends-block-search-bar {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: right;
+    position: sticky;
+    top: 130px;
+    background-color: #2D2D2F;
+    z-index: 1;
+}
+
+.dark .friends-block-search-bar > div {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    color: #E1E4EC;
+}
+
+.dark .friends-block-search-bar.friends {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 130px;
+    background-color: #2D2D2F;
+    z-index: 1;
+}
+
+.dark .friends-block-search-bar.block {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 130px;
+    background-color: #2D2D2F;
+    z-index: 1;
+}
+
+.dark .friends-block-search-bar.request {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 130px;
+    background-color: #2D2D2F;
+}
+
+.dark .animation-request-block.friend-request {
+    display: flex;
+    width: 135px;
+    height: 40px;
+    position: absolute;
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    z-index: -1;
+}
+
+.dark .animation-request-block.sent-request {
+    display: flex;
+    width: 135px;
+    height: 40px;
+    position: absolute;
+    background-color: #202020;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    transition-property: all;
+    z-index: -1;
+    margin-left: 185px;
+}
+
+.dark .request-btn-block div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 15px;
+    min-width: 15px;
+    width: auto;
+    background-color: #3451C6;
+    display: flex;
+    padding: 4px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-right: -6px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .request-btn-block:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark .request-btn-container {
+    width: 320px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark .request-btn-block {
+    display: flex;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+
+.dark .friends-block-search-bar > input {
+    padding: 10px;
+    width: 280px;
+    border-radius: 20px;
+    border: none;
+    background-color: #474749;
+    color: #E1E4EC;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .friends-block-search-bar > input:focus {
+    outline: 1px solid #7C7C7D;
+}
+
+.dark .friends-block {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.dark .friend-card-container {
+    width: 210px;
+    height: 310px;
+    background-color: #2B2B2C;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 1px #525254;
+}
+
+.dark .friend-card-pad-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.dark .friends-user-border {
+    width: 210px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    gap: 5px;
+}
+
+.dark .friends-user-border > img {
+    position: absolute;
+    height: 200px;
+    display: flex;
+}
+
+.dark .friends-user-border svg {
+    z-index: 1;
+}
+
+.dark .friends-username-block {
+    z-index: 1;
+    max-width: 180px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020;
+    padding: 0 2px;
+}
+
+.dark .friends-username-block > span {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .link-text {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #E1E4EC;
+}
+
+.dark .friends-action-block-unfriend {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .friends-action-block-block {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .friends-action-block-add {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .friends-action-block-unblock {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .friends-action-block-unfriend > button {
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3451C6;
+    color: #E1E4EC;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .friends-action-block-block > button {
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background-color: #D22525;
+    color: #E1E4EC;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .friends-action-block-add > button {
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background-color: #22C134;
+    color: #E1E4EC;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .friends-action-block-unblock > button {
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F6720A;
+    color: #E1E4EC;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .friends-action-block-block > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark .friends-action-block-unfriend > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark .friends-action-block-add > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark .friends-action-block-unblock > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark .no-result-friend-user-container {
+    flex: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .no-result-friend-user-container > span {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .load-search-friend-user-container {
+    flex: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .load-search-friend-user-container > div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: #2D2D2F;
+    border-radius: 50%;
+    border: 10px solid #2D2D2F;
+    animation:  loading-friend 2s infinite;
+    border-bottom: 10px solid #525254;
+    border-top: 10px solid #525254;
+}
+
+@keyframes loading-friend {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dark .pops-confirmation-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba( 0, 0, 0, 0.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.dark .pops-confirmation-block {
+    width: 360px;
+    max-height: 400px;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 2px #525254;
+    overflow: hidden;
+}
+
+.dark .pops-confirmation-header {
+    width: 360px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark .pops-confirmation-header > span {
+    color: #E1E4EC;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .pops-confirmation-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 360px;
+    max-height: 220px;
+}
+
+.dark .pops-confirmation-content > span {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #E1E4EC;
+}
+
+.dark .pops-confirmation-content div {
+    max-width: 340px;
+    max-height: 180px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.dark .pops-confirmation-content div > span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #E1E4EC;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark .pops-confirmation-content div::-webkit-scrollbar {
+    background-color: #383839;
+    width: 10px;
+}
+
+.dark .pops-confirmation-content div::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 20px;
+}
+
+.dark .pops-confirmation-footer {
+    width: 360px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dark .pops-confirmation-footer div:nth-child(1) {
+    width: 110px;
+    height: 40px;
+    background-color: #22C134;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #E1E4EC;
+}
+
+.dark .pops-confirmation-footer div:nth-child(2) {
+    width: 110px;
+    height: 40px;
+    background-color: #D22525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #E1E4EC;
+}
+
+.dark .pops-confirmation-footer div:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

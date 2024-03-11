@@ -1,0 +1,9 @@
+.dark .search-bar-container {
+    display: flex;
+    position: fixed;
+    margin-top: 80px;
+    background-color: #313133;
+    width: 820px;
+    padding: 10px;
+    border-radius: 5px;
+}
